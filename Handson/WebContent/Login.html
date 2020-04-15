@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Validation</title>
+<script>
+function validate(){
+	var x=document.forms["myform"]["username"].value;
+	var y=document.forms["myform"]["password"].value;
+	if(x==""){
+		alert("Name should not be empty");
+		return false;
+	}
+	else if(y==""){
+		alert("Password should not be empty");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<table>
+<form name="myform" onsubmit="return validate()">
+<tr>
+<td><Label>UserName:</Label></td><td>
+<input type="text" value="" name="username" placeholder="Enter UserName" required/><br/></td></tr>
+<tr><td>
+<Label>Password:</Label></td><td>
+<input type="password" value="" name="password" placeholder="Enter Password"/><br/></td></tr>
+<tr><td><input type="submit" value="Submit"></td></tr>
+</form>
+</table>
+</body>
+</html>
