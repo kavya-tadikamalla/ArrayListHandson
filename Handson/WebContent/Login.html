@@ -17,18 +17,36 @@ function validate(){
 	}
 }
 </script>
+<style type="text/css">
+body{
+background : #CC5500 ;
+
+}
+table{
+align : center;
+}
+div {
+align : center;
+}
+.bt{
+border-radius: 20px;
+}
+</style>
 </head>
 <body>
+<center>
+<h1>Login Form</h1>
 <table>
-<form name="myform" onsubmit="return validate()">
+<form name="myform" onsubmit="return validate()" >
 <tr>
-<td><Label>UserName:</Label></td><td>
+<td><h4>UserName:</h4></td><td>
 <input type="text" value="" name="username" placeholder="Enter UserName" required/><br/></td></tr>
 <tr><td>
-<Label>Password:</Label></td><td>
+<h4>Password:</h4></td><td>
 <input type="password" value="" name="password" placeholder="Enter Password"/><br/></td></tr>
-<tr><td><input type="submit" value="Submit"></td></tr>
+<tr><td><input type="submit" class="bt" value="Submit"></td></tr>
 </form>
 </table>
+</center>
 </body>
 </html>
